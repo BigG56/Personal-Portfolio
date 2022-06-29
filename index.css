@@ -3,11 +3,39 @@ body {
     display:flex;
     flex-direction: column;
     margin: 0 auto;
+    padding: 0 auto;
 }
 
+.navbar li {
+    display: inline;
+    text-align: right;
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 20px;
+}
+.navbar {
+    border: 2px solid black;
+    border-width: thick;
+    border-style:inset;
+    width: 100%;
+    text-align: right;
+    background-image: radial-gradient(blue, purple, black);
+    color:white;
+}
+
+.navbar h1 {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: -20px;
+    font-family: "Sofia", sans-serif;
+}
+
+.navbar a {
+    color:white;
+}
 .me {
-    width: 300px;
-    height: 300px;
+    width: 490px;
+    height: 550px;
     border: 2px solid yellow;
     border-radius: 25px;
 }
@@ -18,26 +46,53 @@ body {
     height: 550px;
     width: 550px;
     background-color: #ffffe6;
-    font-size: 20px;
+    font-size: 18px;
+    font-family: 'Indie Flower', cursive;
+    font-weight: 400;
 }
 
 #about {
     display:flex;
-    justify-content:flex-start;
-    align-items: space-between;
+    justify-content:center;
+    align-content: space-between;
+    gap: 50px;
 }
 
-.navbar li {
-    display: inline;
-    text-decoration: none;
-    font-size: 18px;
-}
-.navbar {
-    float:right;
+h2 {
+    text-align: center;
     border: 2px solid yellow;
-    width: 100%;
+    border-radius: 50px;
+    border-width: thick;
+    border-style:inset;
+    padding: 0px 0px;
+    font-family: "Sofia", sans-serif;
 }
 
-h1 {
+.proj-cont {
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+    gap: 100px;
+} 
+.html-logo {
+    width:200px;
+    height:200px;
+}
 
+.css-logo {
+    width:200px;
+    height:200px;
+}
+
+.java-logo {
+    width:200px;
+    height:200px;
+}
+
+.pyth-logo {
+    width:200px;
+    height:200px;
+}
+h5 {
+    margin-bottom: 5px;
 }
