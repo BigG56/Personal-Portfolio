@@ -13,6 +13,9 @@ body {
     font-size: 20px;
     margin-right: 20px;
 }
+.navbar a:hover {
+    color:red;
+}
 .navbar {
     border: 2px solid black;
     border-width: thick;
@@ -32,6 +35,11 @@ body {
 
 .navbar a {
     color:white;
+}
+@media only screen and (max-width: 860px) {
+    .navbar {
+        text-align: center;
+    }
 }
 .me {
     width: 490px;
@@ -58,6 +66,58 @@ body {
     gap: 50px;
 }
 
+@media only screen and (max-width: 1050px) {
+    .info-cont p {
+        width:100%;
+        height: 100%;
+        font-size: 14px;
+        overflow-y: scroll;
+    }
+    .info-cont {
+        margin-left: 20px;
+        overflow-y: scroll;
+    }
+    .me {
+        width: 300px;
+        height: 500px;
+    }
+}
+@media only screen and (max-width: 860px) {
+    .info-cont p {
+        width: 100%;
+        height:100%;
+        font-size: 12px;
+        border-radius: 15px;
+    }
+    .info-cont {
+        width: auto;
+        height: 500px;
+        margin-left: 20px;
+        height: 500px;
+    }
+    .me {
+        width: 300px;
+        height: 500px;
+    }
+}
+@media only screen and (max-width: 470px) {
+    .info-cont p {
+        width: 100%;
+        height:100%;
+        font-size: 10px;
+        
+    }
+    .info-cont {
+        margin-left: 20px;
+        height:400px;
+        width: auto;
+    }
+    .me {
+        width: auto;
+        height: 400px;
+    }
+}
+
 h2 {
     text-align: center;
     border: 2px solid yellow;
@@ -74,6 +134,20 @@ h2 {
     align-content: space-between;
     gap: 100px;
 } 
+
+.html5 {
+    font-family: 'Arima', cursive;
+    font-weight: 600;
+}
+
+.java {
+    font-family: 'Arima', cursive;
+    font-weight: 600;
+}
+
+h3 {
+    text-decoration: underline;
+}
 .html-logo {
     width:200px;
     height:200px;
