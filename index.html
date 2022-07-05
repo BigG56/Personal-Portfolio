@@ -15,13 +15,18 @@
     <body>
         <header>                 
             <nav class="navbar">
-                <h1>Tyler Fielding</h1>
-                <ul>
-                    <li><a href="./index.html">About Me</a></li>
-                    <li><a href="">Projects</a></li>
-                    <li><a href="">Skills</a></li>
-                    <li><a href="./contact.html">Contact</a></li>
-                </ul>
+              <h1>Tyler Fielding</h1>
+                <a href="./index.html">About Me</a>
+                <div class="dropdown">
+                 <a>Projects</a>
+                    <div class="dropdown-content">
+                      <a href="#">HTML5 & CSS</a>
+                      <a href="#">JavaScript</a>
+                      <a href="#">Others</a>
+                    </div>
+                </div>
+                <a href="">Skills</a>
+                <a href="./contact.html">Contact</a>            
             </nav>
         </header>
         <h2 class="title1">About Myself</h2>
@@ -34,30 +39,34 @@
                  </article>
             </div>
             <div>
+                <button id="before"><<<</button>
                 <img class="me" src="./resources/photo1.jpg" alt="Photo of Tyler"/>
-            </div>
+                <button id="next">>>></button>
         </section>
         <section>
             <h2 class="title2">My Projects</h2>
             <div class="proj-cont">
                 <div class="html5">
                   <h3>HTML5 + CSS Projects</h3>
-                    <ul>
-                        <li>Website Style Guide</li>
-                        <li>Club Website</li>
-                        <li>Company Home Page</li>
-                        <li>CSS Grid: Taskboard</li>
-                        <li><a href="#">View more...</a></li>
-                    </ul>
+                    <p class="proj-t">Website Style Guide:</p><img class="examp" src="./resources/wsg.png" alt="website style guide"/>
+                    <p class="made">made by Visual Code.</p>
+                    <p class="proj-t">Club Website:</p><img class="examp" src="./resources/club.png" alt="club page"/>
+                    <p class="made">made by Visual Code.</p>
+                    <p class="proj-t">Company Home Page:</p><img class="examp" src="./resources/exotic-Cars.png" alt="company home page"/>
+                    <p class="made">made by Visual Code.</p>
+                    <p class="proj-t">HTML Cheatsheet:</p><img class="examp" src="./resources/cheatsheet.png" alt="HTML cheatsheet"/>
+                    <p class="made">made by Visual Code.</p>
+                    <p class="view">View more...</p>
                 </div>
                 <div class="java">
                   <h3>Javascript Projects</h3>
-                    <ul>
-                        <li>Credit Card Checker</li>
-                        <li>Mysterious Organism</li>
-                        <li>Number Guesser</li>
-                        <li><a href="#">View more...</a></li>
-                    </ul>
+                    <p class="proj-t">Credit Card Checker:</p><img class="examp" src="./resources/card-checker.png" alt="credit card checker"/>
+                    <p class="made">Made with Code generator, at Codecademy</p>
+                    <p class="proj-t">Mysterious Organism:</p><img class="examp" src="./resources/mystery.png" alt="mysterious organism"/>
+                    <p class="made">Made with Code generator, at Codecademy</p>
+                    <p class="proj-t">Number Guesser:</p><img class="examp" src="./resources/number.png" alt="number Guesser"/>
+                    <p class="made">Made with Code generator, at Codecademy</p>
+                    <p class="view">View more...</p>
                 </div>
             </div>
         </section>
@@ -75,6 +84,6 @@
         </footer>
     
         
-        <script src="" async defer></script>
+        <script src="./resources/script.js" async defer></script>
     </body>
 </html>
