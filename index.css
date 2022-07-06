@@ -4,6 +4,7 @@ body {
     flex-direction: column;
     margin: 0 auto;
     padding: 0 auto;
+    overflow-x: hidden;
 }
 
 .navbar a {
@@ -30,6 +31,7 @@ body {
     text-align: center;
     font-size: 40px;
     font-family: "Sofia", sans-serif;
+    margin-top: 50px;
 }
 
 .navbar a {
@@ -83,11 +85,26 @@ body {
     gap: 50px;
 }
 
-@media only screen and (max-width: 1050px) {
+#before {
+    display:flex;
+    flex-direction: row;
+    margin: 0 auto;
+    width: 30px;
+    float: left;
+}
+
+#next {
+    display: flex;
+    margin: 0 auto;
+    width: 30px;
+    float: right;
+}
+
+@media only screen and (max-width: 1050px) and (min-width: 860px) {
     .info-cont p {
         width:100%;
         height: 100%;
-        font-size: 14px;
+        font-size: 16px;
         overflow-y: scroll;
     }
     .info-cont {
@@ -99,18 +116,20 @@ body {
         height: 500px;
     }
 }
-@media only screen and (max-width: 860px) {
+@media only screen and (max-width: 860px) and (min-width: 470px) {
     .info-cont p {
         width: 100%;
         height:100%;
-        font-size: 12px;
+        font-size: 16px;
         border-radius: 15px;
+        overflow-y: scroll;
     }
     .info-cont {
         width: auto;
         height: 500px;
         margin-left: 20px;
         height: 500px;
+        overflow-y: scroll;
     }
     .me {
         width: 300px;
@@ -128,6 +147,7 @@ body {
         margin-left: 20px;
         height:400px;
         width: auto;
+        overflow-y: scroll;
     }
     .me {
         width: auto;
@@ -150,6 +170,7 @@ h2 {
     justify-content: center;
     align-content: space-between;
     gap: 100px;
+    margin: 0 auto;
 } 
 
 .examp {
@@ -173,7 +194,39 @@ h2 {
     font-family: 'Arima', cursive;
     font-weight: 900;
 }
+.smview {
+    display:none;
+}
+@media only screen and (max-width: 1050px) and (min-width: 860px) {
+    .examp {
+        width: 300px;
+        height: 200px;
+    }
+}
 
+@media only screen and (max-width: 860px) {
+    .examp {
+        width: 200px;
+        height: 150px;
+        margin: 0 auto;
+    }
+    .made {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 470px) {
+    .examp {
+        display: none;
+        
+    }
+    .made {
+        font-size: 14px;
+    }
+    .smview {
+        display: block;
+    }
+}
 h3 {
     text-decoration: underline;
 }
